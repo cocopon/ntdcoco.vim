@@ -1,0 +1,63 @@
+*ntdcoco.txt*  Small utility for modifying column highlights.
+
+
+             _-'"`-_   ,__ ,_____________ ___________ ___________  ~
+            |`-_ _-'|  |  \| |_, ,_| ,_  V ,___/ ,_  V ,___/ ,_  \ ~
+            |   |   |  | | | | | | | |_| | |___| |_| | |___| |_| | ~
+             `-_|_-'   |_|\__| |_| |_____^_____\_____^_____\_____/ ~
+
+
+==============================================================================
+0. Contents                                                *ntdcoco-contents*
+
+
+  1. Overview ........................ |ntdcoco-overview|
+  2. Features ........................ |ntdcoco-features|
+  3. Examples ........................ |ntdcoco-examples|
+  4. About ........................... |ntdcoco-about|
+
+
+==============================================================================
+1. Overview                                                *ntdcoco-overview*
+
+
+*ntdcoco* is a small utility for modifying column highlights. "coco" is an
+abbreviation for |colorcolumn| ;)
+
+  Feature used   Required version~
+  -------------  ----------------~
+  |getcurpos()|    7.4.313
+
+
+==============================================================================
+2. Features                                                *ntdcoco-features*
+
+
+*<Plug>(ntdcoco-clear)*
+                Clear all column highlights.
+
+*<Plug>(ntdcoco-toggle-cursor)*
+                Toggle column highlight of the cursor.
+
+
+==============================================================================
+3. Examples                                                *ntdcoco-examples*
+
+
+Toggle column highlight of the cursor with "|" (vertical bar):
+>
+  nmap <Bar> <Plug>(ntdcoco-toggle-cursor)
+<
+
+==============================================================================
+4. About                                                      *ntdcoco-about*
+
+
+|ntdcoco| is developed by cocopon and licensed under the MIT License.
+Visit the project page for the latest information:
+
+  https://github.com/cocopon/ntdcoco.vim
+
+
+==============================================================================
+vim:ft=help:norl:ts=8:tw=78:

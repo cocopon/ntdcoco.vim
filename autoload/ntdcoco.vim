@@ -28,12 +28,12 @@ endfunction
 
 
 function! ntdcoco#clear() abort
-	let &cc = ''
+	let &l:cc = ''
 endfunction
 
 
 function! ntdcoco#toggle(col) abort
-	let cols = s:parse(&cc)
+	let cols = s:parse(&l:cc)
 	let col = printf('%d', a:col)
 
 	let contains = (index(cols, col) >= 0)
@@ -43,7 +43,7 @@ function! ntdcoco#toggle(col) abort
 		call add(cols, col)
 	endif
 
-	let &cc = s:stringify(cols)
+	let &l:cc = s:stringify(cols)
 endfunction
 
 
